@@ -1,0 +1,16 @@
+// Tabet and under
+
+@media (max-width: 768px) {
+    .mob {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr
+    }
+
+}
+//mobile
+
+@media (max-width: 500px) {
+
+
+}

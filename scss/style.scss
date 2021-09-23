@@ -1,0 +1,184 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+@import "mobile";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+// General layout
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+// header
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
+  .flex {
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin: 0px 25px;
+    opacity: 0.5;
+  }
+
+  nav ul li:hover {
+    opacity: 1;
+    font-weight: bold;
+  }
+}
+
+// who
+
+.who {
+  margin-top: 50px;
+  h2 {
+    font-weight: bolder;
+  }
+}
+
+// services
+
+.services {
+  span {
+    display: inline-block;
+    background-color: $warning-color;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  .grid {
+    width: 70%;
+  }
+
+  .card {
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.2);
+  }
+}
+
+// newsletter
+
+.newsletter {
+  input[type="Email"] {
+    padding: 10px 5px;
+    font-size: $sm;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="submit"] {
+    font-size: $sm;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+// to top
+#toTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  font-size: $md;
+}
+
+//footer
+
+.footer {
+  .flex {
+    align-items: flex-start;
+  }
+
+  .grid-3 {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  li {
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/// responsive
+
+@media (max-width: 768px) {
+  * {
+    text-align: center;
+  }
+
+  header {
+    overflow: visible;
+    height: 100px;
+    border-bottom: 1px $dark-color solid;
+    .flex {
+      justify-content: center;
+    }
+
+    nav {
+        padding-bottom: 10px;
+    }
+  }
+
+  .footer {
+    .flex {
+      align-items: flex-start;
+    }
+
+    .grid-3 {
+      grid-template-columns: 3fr 2fr 1fr;
+    }
+
+    .social .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+//mobile
+
+@media (max-width: 500px) {
+  .newsletter {
+    input[type="submit"] {
+      width: 350px;
+      margin-top: 20px;
+    }
+  }
+
+  .footer {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .flex {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .social .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+%btn {
+    display:inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 3px;
+    border: none;
+    color: $light-color;
+    
+    &:hover {
+        transform: scale(.98)
+    }
+}
+
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary-color;
+}
+
+.btn-dark {
+    @extend %btn;
+    background-color: $dark-color;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $secondary-color;
+}
+
+.btn-light {
+    @extend %btn;
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+
+
+.btn-outline {
+    @extend %btn;
+    background-color: transparent;
+    border: 1px solid $light-color;
+}
