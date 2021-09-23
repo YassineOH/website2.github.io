@@ -63,6 +63,29 @@ p {
   text-align: center;
 }
 
+.form-control {
+  width: 100%;
+
+  input {
+    font-size: $sm;
+    width: 100%;
+    border: none;
+    padding: 10px 5px;
+    margin: 20px 0;
+    background-color: transparent;
+    border-bottom: 5px solid $dark-color;
+    color: $dark-color;
+
+    &:focus{
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $dark-color;
+    }
+  }
+}
+
 // background
 
 .bg-primary {
@@ -80,6 +103,11 @@ p {
   color: $light-color;
 }
 
+.bg-accent {
+  background-color: $accent-color;
+  color: $dark-color;
+}
+
 .bg-light {
   background-color: $light-color;
   color: $dark-color;
@@ -90,6 +118,13 @@ p {
 .bg-dark {
   a {
     color: $light-color;
+  }
+}
+
+.bg-light,
+.bg-accent {
+  a {
+    color: $dark-color;
   }
 }
 

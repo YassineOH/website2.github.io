@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>MY WEBSITE</title>
 </head>
+
 <body>
     <!-- header -->
     <header class="bg-primary">
@@ -24,6 +27,43 @@
     </header>
 
 
+    <!-- contact -->
+    <section class="contact bg-secondary py-5">
+        <div class="container grid">
+            <div class="card bg-accent">
+                <h2 class="my-1">Follow Us on:</h2>
+                <nav class="social">
+                    <ul class="flex flex-col mob">
+                        <li><a href="#"><i class="fab fa-facebook  py-1"></i> FACEBOOK</a></li>
+                        <li><a href="#"><i class="fab fa-twitter  py-1"></i> TWITTER</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin  py-1"></i> LINKEDIN</a></li>
+                        <li><a href="#"><i class="fab fa-instagram  py-1"></i> INSTAGRAM</a></li>
+                    </ul>
+                    <h2 class="my-1">EMAIL US </h2>
+                    <h3>exemple.ex@exemple.com</h3>
+                </nav>
+            </div>
+
+            <div class="card bg-accent">
+                <form class="flex flex-col">
+                    <div class="form-control">
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-control">
+
+                        <input type="email" id="uEmail" placeholder="Email">
+                    </div>
+
+                    <div class="form-control">
+                        <input type="text" id="msg" placeholder="Write your message">
+                    </div>
+
+                    <input type="submit" name="submit" id="mysubmit" value="Send" class="btn btn-secondary">
+                </form>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer class="footer bg-dark py-4">
@@ -61,4 +101,5 @@
     <a href="#whoid" class="btn btn-light hidden" id="toTop"><i class="fa fa-chevron-up"></i></a>
     <script src="script.js"></script>
 </body>
+
 </html>

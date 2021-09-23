@@ -79,6 +79,41 @@ p {
   text-align: center;
 }
 
+.form-control {
+  width: 100%;
+}
+
+.form-control input {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  margin: 20px 0;
+  background-color: transparent;
+  border-bottom: 5px solid #290300;
+  color: #290300;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.form-control input::-webkit-input-placeholder {
+  color: #290300;
+}
+
+.form-control input:-ms-input-placeholder {
+  color: #290300;
+}
+
+.form-control input::-ms-input-placeholder {
+  color: #290300;
+}
+
+.form-control input::placeholder {
+  color: #290300;
+}
+
 .bg-primary {
   background-color: #975215;
   color: #f4ecf5;
@@ -94,6 +129,11 @@ p {
   color: #f4ecf5;
 }
 
+.bg-accent {
+  background-color: #f4ecf5;
+  color: #290300;
+}
+
 .bg-light {
   background-color: #f4ecf5;
   color: #290300;
@@ -103,6 +143,11 @@ p {
 .bg-secondary a,
 .bg-dark a {
   color: #f4ecf5;
+}
+
+.bg-light a,
+.bg-accent a {
+  color: #290300;
 }
 
 .lead {
@@ -428,6 +473,24 @@ header nav ul li:hover {
   z-index: 99;
   /* Make sure it does not overlap */
   font-size: 24px;
+}
+
+.contact {
+  height: 90vh;
+}
+
+.contact .grid {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.contact .social .flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer .flex {
