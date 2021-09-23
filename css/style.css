@@ -529,6 +529,10 @@ header nav ul li:hover {
   header nav {
     padding-bottom: 10px;
   }
+  .contact .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .footer .flex {
     -webkit-box-align: start;
         -ms-flex-align: start;

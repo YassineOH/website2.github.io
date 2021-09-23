@@ -165,6 +165,12 @@ header {
     }
   }
 
+  .contact {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .footer {
     .flex {
       align-items: flex-start;
