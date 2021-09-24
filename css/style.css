@@ -529,6 +529,10 @@ header nav ul li:hover {
   header nav {
     padding-bottom: 10px;
   }
+  .contact {
+    padding-top: 150px;
+    height: auto;
+  }
   .contact .grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
